@@ -1,11 +1,12 @@
 def first_and_last_element_swap(lst):
-    lst.insert(0, my_list[-1])
 
-    lst.append(my_list[1])
+    first_element = lst[0]
 
-    lst.pop(1)
+    last_element = lst[-1]
 
-    lst.pop(-2)
+    lst[0] = last_element
+
+    lst[-1] = first_element
 
     return lst
 
