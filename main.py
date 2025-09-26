@@ -1,12 +1,5 @@
 def first_and_last_element_swap(lst):
-
-    first_element = lst[0]
-
-    last_element = lst[-1]
-
-    lst[0] = last_element
-
-    lst[-1] = first_element
+    lst[0], lst[-1] = lst[-1], lst[0]
 
     return lst
 
